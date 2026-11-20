@@ -4,10 +4,9 @@
 //
 // Project structure expected:
 //   main.typ
-//   assets/
-//     bib-template.bib
-//     uni-basel-logo-en.png
-//     dhlab-logo-black.png
+//   bib-template.bib
+//   uni-basel-logo-en.png
+//   dhlab-logo-black.png
 //
 // The bibliography uses Typst's native Hayagriva/BibLaTeX-compatible bibliography reader and APA style.
 
@@ -101,8 +100,8 @@ Prof. Dr. Firstname Lastname 2"
       columns: (1fr, 1fr),
       column-gutter: -4cm,
       align: center,
-      image("assets/uni-basel-logo-en.png", width: 40%),
-      image("assets/dhlab-logo-black.png", width: 40%),
+      image("uni-basel-logo-en.png", width: 40%),
+      image("dhlab-logo-black.png", width: 40%),
     )
 
     #v(0.5cm)
@@ -246,14 +245,14 @@ With Typst, images are embedded within the text with a caption and a path to the
 This is how an image is inserted into the document:
 
 #figure(
-  image("assets/dhlab-logo-black.png", width: 100%),
+  image("dhlab-logo-black.png", width: 100%),
   caption: [Logo of the DH Lab],
 ) <logo-full>
 
 You can also resize images:
 
 #figure(
-  image("assets/dhlab-logo-black.png", width: 50%),
+  image("dhlab-logo-black.png", width: 50%),
   caption: [Logo of the DH Lab, but smaller],
 ) <logo-small>
 
@@ -324,4 +323,4 @@ Exporting your final document with Typst is really easy: Simply compile it one f
 
 // The bibliography file is expected at this path.
 // APA is a built-in Typst bibliography style.
-#bibliography("assets/bib-template.bib", title: "References", style: "apa")
+#bibliography("bib-template.bib", title: "References", style: "apa")
